@@ -1,0 +1,21 @@
+@use './assets/config' as c;
+
+header{
+    background-image: url("/src/assets/img/hero_forest.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100dvw;
+    min-height:100dvh ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+}
