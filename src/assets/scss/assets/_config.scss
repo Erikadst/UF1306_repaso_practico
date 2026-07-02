@@ -10,17 +10,15 @@
     src: url('/src/assets/fonts/Montserrat-Light.ttf');
 }
 
-
 $tablet: 800px;
 $desktop: 1300px;
 
-
 $titulo01: Montserrat;
 
-$color01: rgb(232, 206, 187);
 $color02: rgb(207, 234, 214);
 $color03: rgb(62, 92, 65);
 $color04: rgb(34, 50, 35);
+$color04svg:  invert(13%) sepia(9%) saturate(2112%) hue-rotate(74deg) brightness(94%) contrast(86%);
 
 h1{
     font-family: $titulo01;
@@ -33,14 +31,16 @@ h1{
 h2{
     font-family: $titulo01;
     font-weight: 600;
-    color: $color01;
-    font-size: clamp(1.5rem, 2vw, 3rem);
+    color: $color04;
+    font-size: clamp(2rem, 3vw, 4rem);
     text-align: center;
-    
 }
+
 p{
     font-family: $titulo01;
+    font-weight: 600;
     font-size: 1rem;
+    color: $color02;
 }
 
 article{
@@ -50,11 +50,12 @@ article{
     justify-content: center;
     padding: 2rem 0rem;
 }
+
 .boton{
     text-decoration: none;
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
-    background-color: $color01;
+    background-color: $color02;
     color: $color03;
     transition: 1s;
     font-weight: 600;
@@ -63,10 +64,22 @@ article{
         color:$color03;
     }
 }
+
 .card{
     cursor: pointer;
     transition: 1s;
     &:hover{
-        background-color: rgba(0, 0, 0, 0.335);
+        background-color: $color03;
     }
 }
+
+.carousel{
+    width: 80%;
+}
+
+.accordion{
+    padding: 3rem 0rem;
+    width: 80%;
+}
+
+
