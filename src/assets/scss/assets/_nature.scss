@@ -1,0 +1,12 @@
+@use 'config' as c;
+
+.card{
+    cursor: pointer;
+    transition: 1s;
+    &:hover{
+        background-color: c.$color04;
+    }
+    >p{
+        color: c.$color04;
+    }
+}

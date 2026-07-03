@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="description" content="Descubre el mundo de la naturaleza desde otro punto de vista.">
   </head>
+
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm opacity-50 fixed-top">
-      <div class="container ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+      <div class="container">
         <a class="navbar-brand fw-bold" href="#"><img src="src/assets/img/logo.svg" width="50" alt="logo" title="logo arboles"></a>
         <button
           class="navbar-toggler"
@@ -23,21 +24,20 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
+          <ul class="navbar-nav ms-auto gap-3">
             <li class="nav-item">
               <a class="nav-link" href="#nature">Nature</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#slider">Slider</a>
+              <a class="nav-link" href="#slider">Forest Animals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#acordeon">Accordion</a>
+              <a class="nav-link" href="#acordeon">More about animals</a>
             </li>
           </ul>
         </div>
@@ -45,10 +45,12 @@
     </nav>
 
     <header>
-      <h1>FOREST</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?
-      </p>
-      <a href="#nature" class="boton">Descubrir</a> 
+      <div>
+        <h1>FOREST</h1>
+        <h2>Descubre la belleza de los bosques y la increíble vida que albergan.
+        </h2>
+        <a href="#nature" class="boton">Descubrir</a>
+      </div> 
     </header>
 
     <main>
@@ -56,33 +58,33 @@
       <section>
 
         <article id="nature">
-          <h2>Nature</h2>
+          <h3>Nature</h3>
           <div class="d-flex flex-wrap justify-content-center p-4 gap-3">
             <div class="card" style="width: 18rem;">
               <img src="src/assets/img/card1.avif" class="card-img-top" alt="forest1" >
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">Los bosques antiguos son refugios de una enorme biodiversidad. Sus árboles centenarios, suelos ricos y ecosistemas equilibrados ofrecen hogar a miles de especies.</p>
               </div>
             </div>
             <div class=" card" style="width: 18rem;">
               <img src="src/assets/img/card2.avif" class="card-img-top" alt="forest2" >
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">Los valles boscosos combinan ríos, vegetación y fauna en un paisaje lleno de vida. Son lugares ideales para el senderismo y la observación de la naturaleza.</p>
               </div>
             </div>
             <div class=" card" style="width: 18rem;">
               <img src="src/assets/img/card3.avif" class="card-img-top" alt="forest3">
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">Los paisajes salvajes muestran la naturaleza en su estado más puro. Cada estación transforma el bosque con nuevos colores, sonidos y especies.</p>
               </div>
             </div>
           </div>
         </article>
 
         <article id="slider">
-          <h2>Slider</h2>
+          <h3>Forest Animals</h3>
           <div id="carouselExampleIndicators" class="carousel slide ">
-            <div class="carousel-indicators p-4">
+            <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -110,7 +112,7 @@
         </article>
 
         <article id="acordeon">
-          <h2>Accordion</h2>
+          <h3>More about animals</h3>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -120,7 +122,7 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>El lobo es un depredador</strong> clave en muchos ecosistemas forestales. Vive en manadas organizadas y ayuda a mantener el equilibrio natural al controlar las poblaciones de otras especies. Su inteligencia, cooperación y capacidad de adaptación lo convierten en uno de los animales más fascinantes del bosque.
                 </div>
               </div>
             </div>
@@ -132,7 +134,7 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Los búhos son aves nocturnas</strong> conocidas por su excelente visión y su vuelo silencioso. Gracias a su agudo oído pueden detectar pequeñas presas incluso en la oscuridad, desempeñando un papel importante en el control de roedores.
                 </div>
               </div>
             </div>
@@ -144,7 +146,7 @@
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>Las ardillas pasan gran parte del día buscando</strong> y almacenando semillas y frutos. Muchas de esas semillas olvidadas llegan a convertirse en nuevos árboles, por lo que estos pequeños mamíferos ayudan de forma natural a la regeneración de los bosques.
                 </div>
               </div>
             </div>
@@ -153,12 +155,10 @@
 
       </section>
 
-
     </main>
-
-
 
     <script type="module" src="/src/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>

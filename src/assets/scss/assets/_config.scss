@@ -10,37 +10,96 @@
     src: url('/src/assets/fonts/Montserrat-Light.ttf');
 }
 
-$tablet: 800px;
-$desktop: 1300px;
-
 $titulo01: Montserrat;
-
-$color02: rgb(207, 234, 214);
+$color01: rgb(208, 236, 216);
+$color02: rgb(169, 192, 175);
 $color03: rgb(62, 92, 65);
 $color04: rgb(34, 50, 35);
-$color04svg:  invert(13%) sepia(9%) saturate(2112%) hue-rotate(74deg) brightness(94%) contrast(86%);
+$color04svg: brightness(0) saturate(100%) invert(14%) sepia(18%) saturate(840%) hue-rotate(74deg) brightness(97%) contrast(91%);
 
 h1{
     font-family: $titulo01;
-    color: $color04;
+    color: $color01;
     font-weight: 900;
-    font-size: clamp(3rem, 5vw, 8rem);
-    text-shadow: 0px 0px 3px $color02;
+    font-size: clamp(4rem, 5vw, 8rem);
+    text-shadow: 0px 0px 5px $color04;
 }
 
 h2{
     font-family: $titulo01;
     font-weight: 600;
-    color: $color04;
-    font-size: clamp(2rem, 3vw, 4rem);
+    color: $color01;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     text-align: center;
+    text-shadow: 0px 0px 5px $color04;
 }
 
+h3{
+    font-family: $titulo01;
+    font-weight: 800;
+    color: $color04;
+    font-size: clamp(2rem, 2vw, 3rem);
+    text-align: center;
+}
 p{
     font-family: $titulo01;
     font-weight: 600;
     font-size: 1rem;
     color: $color02;
+    
+}
+
+.bg-light {
+    --bs-bg-opacity: 0.5;
+}
+
+.navbar{
+    --bs-navbar-toggler-border-color: rgba(0,0,0, 0): rgba(var(--bs-emphasis-color-rgb), 0);
+}
+
+.navbar-toggler {
+    color:rgba(25, 57, 25, 0.238);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler .line {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 6px auto;
+  background: $color04;
+  border-radius: 3px;
+  transition: all .3s ease;
+}
+
+/* Cuando el menú está abierto */
+.navbar-toggler[aria-expanded="true"] .line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.navbar-brand{
+    >img{
+        filter: $color04svg;
+    }
+}
+
+.container{
+    width:90%;
 }
 
 article{
@@ -48,38 +107,29 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0rem;
+    padding: 1.5rem 0rem;
 }
 
 .boton{
     text-decoration: none;
     padding: 0.5rem 1.5rem;
     border-radius: 5px;
-    background-color: $color02;
+    background-color: $color01;
     color: $color03;
     transition: 1s;
     font-weight: 600;
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     &:hover{
         background-color: rgba(255, 255, 255, 0.479);
         color:$color03;
     }
 }
 
-.card{
-    cursor: pointer;
-    transition: 1s;
-    &:hover{
-        background-color: $color03;
-    }
-}
-
 .carousel{
     width: 80%;
+    padding: 2rem 0rem;
 }
 
-.accordion{
-    padding: 3rem 0rem;
-    width: 80%;
-}
+
 
 
